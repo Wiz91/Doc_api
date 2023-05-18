@@ -156,12 +156,12 @@ LOCALE_PATHS = (os.path.join(BASE_DIR, 'locale'),)
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
-CORS_ALLOWED_ORIGINS = [
-    "http://localhost:8000",
-    "http://127.0.0.1:8000",
-    "http://localhost:3000",
-    "http://127.0.0.1:3000",
-]
+# CORS_ALLOWED_ORIGINS = [
+#     "http://localhost:8000",
+#     "http://127.0.0.1:8000",
+#     "http://localhost:3000",
+#     "http://127.0.0.1:3000",
+# ]
 
 SWAGGER_SETTINGS = {
    'USE_SESSION_AUTH': False
@@ -170,9 +170,7 @@ SWAGGER_SETTINGS = {
 CORS_ALLOW_ALL_ORIGINS = True
 CORS_ALLOW_CREDENTIALS = True
 
-CSRF_TRUSTED_ORIGINS = [
-    'https://fdae-2401-4900-1c19-97d5-f99e-832e-b483-f04e.ngrok-free.app'
-]
+
 
 SIMPLE_JWT = {
     'ACCESS_TOKEN_LIFETIME': timedelta(minutes=60),
@@ -207,9 +205,9 @@ SIMPLE_JWT = {
 }
 
 
-CSRF_TRUSTED_ORIGINS = [
-    'https://af12-2401-4900-1c19-9fcf-6dd6-f2c2-b4c0-8d5f.ngrok-free.app'
-]
+# CSRF_TRUSTED_ORIGINS = [
+#     'https://af12-2401-4900-1c19-9fcf-6dd6-f2c2-b4c0-8d5f.ngrok-free.app'
+# ]
 
 SECURE_PROXY_SSL_HEADER = ('HTTP_X_FORWARDED_PROTO', 'https')
 
